@@ -7,9 +7,10 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'YBTestCocoapod'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of YBTestCocoapod.'
+  s.name             = 'YBBBBGetWidth'
+  s.version          = '0.0.1'
+  s.summary          = 'YBBBBGetWidth的简短介绍'
+  s.swift_version = '4.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +19,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: YBBBBGetWidth的简短介绍很长很长的介绍.
                        DESC
 
-  s.homepage         = 'https://github.com/1178396706@qq.com/YBTestCocoapod'
+  s.homepage         = 'https://github.com/159632/YBBBBGetWidth'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1178396706@qq.com' => '1178396706@qq.com' }
-  s.source           = { :git => 'https://github.com/1178396706@qq.com/YBTestCocoapod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/159632/YBBBBGetWidth.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
