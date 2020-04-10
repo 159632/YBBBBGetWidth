@@ -1,0 +1,6 @@
+framework module YBBBBGetWidth {
+  umbrella header "YBBBBGetWidth-umbrella.h"
+
+  export *
+  module * { export * }
+}

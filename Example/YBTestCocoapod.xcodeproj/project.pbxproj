@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		0B8A64D697EA93ABBDB358FC /* Pods-YBTestCocoapod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBTestCocoapod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YBTestCocoapod_Tests/Pods-YBTestCocoapod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		18C747A2D52FFBF7B15098B7 /* Pods-YBTestCocoapod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBTestCocoapod_Example.release.xcconfig"; path = "Target Support Files/Pods-YBTestCocoapod_Example/Pods-YBTestCocoapod_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1BA80345C4E3639BFE4E93A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		307C034E2B02CD745897571F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1BA80345C4E3639BFE4E93A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		307C034E2B02CD745897571F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E4ED6D4B4CB1EE82430290E /* Pods-YBTestCocoapod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBTestCocoapod_Tests.release.xcconfig"; path = "Target Support Files/Pods-YBTestCocoapod_Tests/Pods-YBTestCocoapod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YBTestCocoapod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBTestCocoapod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* YBTestCocoapod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBTestCocoapod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		75DCFE77036409864B635A92 /* YBTestCocoapod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YBTestCocoapod.podspec; path = ../YBTestCocoapod.podspec; sourceTree = "<group>"; };
+		75DCFE77036409864B635A92 /* YBBBBGetWidth.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YBBBBGetWidth.podspec; path = ../YBBBBGetWidth.podspec; sourceTree = "<group>"; };
 		7EED84C188D7F63DB85F008D /* Pods_YBTestCocoapod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBTestCocoapod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6246F2BF8F40EE27CA1FC11 /* Pods-YBTestCocoapod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBTestCocoapod_Example.debug.xcconfig"; path = "Target Support Files/Pods-YBTestCocoapod_Example/Pods-YBTestCocoapod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DA3497E75B4C5715D0B0C0DE /* Pods_YBTestCocoapod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBTestCocoapod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +132,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				75DCFE77036409864B635A92 /* YBTestCocoapod.podspec */,
+				75DCFE77036409864B635A92 /* YBBBBGetWidth.podspec */,
 				1BA80345C4E3639BFE4E93A2 /* README.md */,
 				307C034E2B02CD745897571F /* LICENSE */,
 			);
@@ -156,7 +156,6 @@
 				0B8A64D697EA93ABBDB358FC /* Pods-YBTestCocoapod_Tests.debug.xcconfig */,
 				5E4ED6D4B4CB1EE82430290E /* Pods-YBTestCocoapod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,11 +313,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YBTestCocoapod_Example/Pods-YBTestCocoapod_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YBTestCocoapod/YBTestCocoapod.framework",
+				"${BUILT_PRODUCTS_DIR}/YBBBBGetWidth/YBBBBGetWidth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBTestCocoapod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YBBBBGetWidth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

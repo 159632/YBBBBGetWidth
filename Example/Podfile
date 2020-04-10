@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'YBTestCocoapod_Example' do
-  pod 'YBTestCocoapod', :path => '../'
+  pod 'YBBBBGetWidth', :path => '../'
 
   target 'YBTestCocoapod_Tests' do
     inherit! :search_paths
